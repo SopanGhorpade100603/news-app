@@ -10,8 +10,7 @@ const News = (props) => {
   const [loading, setLoading] = useState(true)
   const [page, setPage] = useState(1)
   const [totalResults, setTotalResults] = useState(0)
-  // document.tittle = props.category;
-
+  
   const updateNews = async()=> {
     props.setProgress(10);  //top loading bar
     const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=bfcea04998154c4abf46c3045520866a&pageSize=${props.pageSize}`;
