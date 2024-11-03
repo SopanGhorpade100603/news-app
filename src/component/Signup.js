@@ -31,7 +31,6 @@ export default function Signup() {
   };
 
   const sendDataToBackend = async () => {
-    // const data = formData;
     const response = await fetch("http://127.0.0.1:5000/signup", {
       method: "post",
       headers: {
@@ -41,7 +40,7 @@ export default function Signup() {
     });
     const Code = await response.json(); // to display ui response
     console.log("data is *** ", Code);
-    if (Code.statusCode == 200) {
+    if (Code.statusCode === 200) {
       setStatusCode("signup successful!");
     } else {
       setStatusCode("unable to store data");
@@ -79,7 +78,7 @@ export default function Signup() {
       password: "",
       confPassword: "",
       mobileNumber: "",
-      // statusCode: "",
+      statusCode: "",
     });
   };
   return (

@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
 body {
   background-color: #caf0fe;
 }
@@ -88,9 +89,6 @@ body {
   margin-left: 30px;
 }
 
-/* navbar font  */
-.navbar-brand {
-}
 /* Form container styling */
 form {
   max-width: 50vh;
@@ -122,8 +120,6 @@ input {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
-  margin-right: 13px;
-  padding-right: 2px;
 }
 
 /* Focus styling for inputs */
@@ -204,32 +200,28 @@ button:disabled {
 
 .logout-btn:hover {
   background-color: #c8173b; /* Darken on hover */
-  color: white;
 }
 
-/* style for redirect signup page  */
-.signup-prompt {
+/* Style for redirect signup page */
+.signup-prompt,
+.login-prompt {
   color: #444;
   width: 90%;
-  margin-top: -13%;
   text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
+}
+
+.signup-prompt {
+  margin-top: -12%;
   margin-left: 4%;
 }
 
 .login-prompt {
-  color: #444;
-  width: 90%;
   margin-top: -3%;
   margin-left: 5%;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2em;
 }
 
 .signup-link,
