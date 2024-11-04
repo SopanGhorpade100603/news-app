@@ -26,7 +26,9 @@ const Navbar = ({ setIsLoggedIn }) => {
               <li className="nav-item">
                 {" "}
                 <NavLink
-                  className="nav-link navbar-brand text-white "
+                   className={({ isActive }) =>
+                    `nav-link navbar-brand text-white ${isActive ? "active-link" : ""}`
+                  }
                   aria-current="page"
                   to="/dashboard/general"
                 >
@@ -36,7 +38,9 @@ const Navbar = ({ setIsLoggedIn }) => {
               <li className="nav-item">
                 {" "}
                 <NavLink
-                  className="nav-link navbar-brand text-white"
+                  className={({ isActive }) =>
+                    `nav-link navbar-brand text-white ${isActive ? "active-link" : ""}`
+                  }
                   to="/dashboard/business"
                 >
                   Business
@@ -45,7 +49,9 @@ const Navbar = ({ setIsLoggedIn }) => {
               <li className="nav-item">
                 {" "}
                 <NavLink
-                  className="nav-link navbar-brand text-white"
+                  className={({ isActive }) =>
+                    `nav-link navbar-brand text-white ${isActive ? "active-link" : ""}`
+                  }
                   to="/dashboard/entertainment"
                 >
                   Entertainment
@@ -54,7 +60,9 @@ const Navbar = ({ setIsLoggedIn }) => {
               <li className="nav-item">
                 {" "}
                 <NavLink
-                  className="nav-link navbar-brand text-white"
+                 className={({ isActive }) =>
+                  `nav-link navbar-brand text-white ${isActive ? "active-link" : ""}`
+                }
                   to="/dashboard/health"
                 >
                   Health
@@ -63,7 +71,9 @@ const Navbar = ({ setIsLoggedIn }) => {
               <li className="nav-item">
                 {" "}
                 <NavLink
-                  className="nav-link navbar-brand text-white"
+                  className={({ isActive }) =>
+                    `nav-link navbar-brand text-white ${isActive ? "active-link" : ""}`
+                  }
                   to="/dashboard/science"
                 >
                   Science
@@ -72,7 +82,9 @@ const Navbar = ({ setIsLoggedIn }) => {
               <li className="nav-item">
                 {" "}
                 <NavLink
-                  className="nav-link navbar-brand text-white"
+                  className={({ isActive }) =>
+                    `nav-link navbar-brand text-white ${isActive ? "active-link" : ""}`
+                  }
                   to="/dashboard/sport"
                 >
                   Sport
@@ -81,7 +93,9 @@ const Navbar = ({ setIsLoggedIn }) => {
               <li className="nav-item">
                 {" "}
                 <NavLink
-                  className="nav-link navbar-brand text-white"
+                 className={({ isActive }) =>
+                  `nav-link navbar-brand text-white ${isActive ? "active-link" : ""}`
+                }
                   to="/dashboard/technology"
                 >
                   Technology
